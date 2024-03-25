@@ -8,7 +8,7 @@ export const createElement = (tag, className, text) => {
     }
 
     if(text) {
-        text.innerHTML = text
+        elem.innerHTML = text
     }
 
     return elem
@@ -24,7 +24,7 @@ const HEADER_BUTTON_LIST = [
         with: 24,
         height: 24,
         src: '/svg/picture.svg'
-    },
+    }
 ]
 
 export const createHeader = () => {
@@ -111,6 +111,3 @@ const createPost = () => {
 
     return postlist
 }
-
-const post = createPost()
-page.append(post)

@@ -1,4 +1,4 @@
-import { createElement } from '../../script/layout'
+import { createElement, createHeader } from '../../script/layout'
    
 const page = document.querySelector('.page')
 
@@ -6,4 +6,9 @@ const title = createElement('h1', 'title', 'Мій блог')
 
 page.append(title)
 
-console.log('container')
+const header = createHeader()
+
+page.append(header)
+
+// console.log('container')
+
