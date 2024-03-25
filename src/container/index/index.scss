@@ -1,7 +1,101 @@
 @use '../../style' as s;
 
 main {
-	background: s.color(dark);
+	background: #fff;
 	color: s.color(light);
 	padding: s.space(4);
-} 
+}
+
+.page {
+	// box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+	width: 420px;
+	border-radius: 12px;
+	padding: 12px;
+	color: #000;
+	display: grid;
+	gap: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(244, 111, 23, 1);
+}
+
+.align {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.box {
+	background: rgba(247, 247, 247, 1);
+	padding: 16px;
+	display: grid;
+	gap: 12px;
+	border-radius: 12px;
+}
+
+.pencil {
+	display: flex;
+	gap: 12px;
+}
+
+.pen {
+	display: flex;
+	justify-content: space-between;
+}
+
+.time {
+   color: rgba(136, 136, 136, 1);
+}
+
+.button-box {
+	background: rgba(247, 233, 225, 1);
+	padding: 12px;
+	border-radius: 20px;
+	color: rgba(244, 111, 23, 1);
+}
+
+.button-class {
+	background: rgba(246, 232, 239, 1);
+	padding: 12px;
+	border-radius: 20px;
+	color: rgba(239, 93, 168, 1);
+}
+
+.box-description {
+    font-size: 18px;
+	width: 350px;
+}
+
+.win {
+	display: grid;
+	gap: 10px;
+}
+
+.box-2 {
+	padding: 16px;
+    display: grid;
+	gap: 12px;
+	border-radius: 12px;
+	border: 1px solid rgba(230, 230, 230, 1);
+}
+
+.box-description-2 {
+	font-size: 18px;
+	width: 350px;
+	color: rgba(136, 136, 136, 1);
+}
+
+button {
+    transition: opacity 0.7s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
