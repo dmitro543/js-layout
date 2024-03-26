@@ -1,7 +1,6 @@
 import { createElement,
          createHeader, 
-         createPost,
-         POST_LIST } 
+         createPost, } 
 from '../../script/layout'
    
 const page = document.querySelector('.page')
