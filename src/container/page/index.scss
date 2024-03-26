@@ -22,9 +22,22 @@ main {
     justify-content: space-between;
 }
 
+.tab__list {
+    display: flex;
+    justify-content: center;
+    color: rgba(136, 136, 136, 1);
+    font-size: 18px;
+}
+
 span {
     color: rgba(18, 18, 18, 1);
     font-size: 18px;
+}
+
+.tab__button:first-child {
+    border-bottom: 2px solid rgba(136, 136, 136, 1);
+    width: 180px;
+    text-align: center;
 }
 
 p {
@@ -32,6 +45,37 @@ p {
     font-size: 16px;
     color: rgba(54, 54, 54, 1);
     line-height: 24px;
+}
+
+.tab__active {
+    color: rgba(18, 18, 18, 1);
+    border-bottom: 4px solid #000;
+    width: 180px;
+    text-align: center;
+}
+
+.main__title {
+	color: #000;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.main__img {
+    width: 100%;
+}
+
+.post_list {
+    background: red;
+}
+
+.main__button {
+    margin-top: 12px;
+    background: rgba(244, 111, 23, 1);
+    padding: 12px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
 }
 
 .align {

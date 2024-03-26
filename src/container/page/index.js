@@ -1,7 +1,7 @@
 import { createElement,
     createHeader, 
-    createPost,
-    MAIN_INFO,
+    createContainerTab,
+    createMain,
  } 
 from '../../script/layout-2'
 
@@ -15,10 +15,9 @@ const title = createElement('h1', 'title', 'Коммьюніті')
 
 page.append(title)
 
-const post = createPost()
-page.append(post)
+const div = createContainerTab()
+page.append(div)
 
-const img = createElement('img', 'main_img');
-    img.src = MAIN_INFO.img;
-main.appendChild(img);
+const main = createMain()
+page.append(main)
 // console.log('container')
