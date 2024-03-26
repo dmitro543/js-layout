@@ -17,6 +17,23 @@ main {
 	gap: 20px;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color: rgba(18, 18, 18, 1);
+    font-size: 18px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgba(54, 54, 54, 1);
+    line-height: 24px;
+}
+
 .align {
 	display: flex;
 	justify-content: space-between;

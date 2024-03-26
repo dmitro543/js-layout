@@ -7,7 +7,7 @@ main {
 }
 
 .page {
-	// box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
 	width: 420px;
 	border-radius: 12px;
 	padding: 12px;
@@ -26,9 +26,28 @@ a {
 	justify-content: space-between;
 }
 
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
 .title {
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.post_list {
+	display: grid;
+	gap: 16px;
+	color: #000;
+}
+
+.post_category {
+    background: rgba(246, 232, 239, 1);
+	color: rgba(239, 93, 168, 1);
+	padding: 8px;
+	border-radius: 12px;
 }
 
 .box {
@@ -37,6 +56,21 @@ a {
 	display: grid;
 	gap: 12px;
 	border-radius: 12px;
+}
+
+p {
+	line-height: 24px;
+}
+
+.post_data {
+    color: rgba(136, 136, 136, 1);
+	margin-left: 330px;
+	position: relative;
+	bottom: 20px;
+}
+
+.post_list {
+	background: rgba(247, 247, 247, 1);
 }
 
 .pencil {

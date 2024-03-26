@@ -1,5 +1,3 @@
-// import { param } from "../route"
-
 export const createElement = (tag, className, text) => {
     const elem = document.createElement(tag)
 
@@ -43,21 +41,35 @@ export const createHeader = () => {
     return header
 }
 
+export const MAIN_INFO = [
+    {
+        with: 22,
+        height: 22,
+        src: '/svg/team.svg'
+    },
+]
+
+// export const createHeaders = () => {
+//     const headers = createElement('header', 'header')
+
+//     MAIN_INFO.forEach((params) => {
+//        const button = createElement('button', 'button')
+
+//        const img = createElement('img')
+//        Object.entries(params).forEach(([key, value]) => {
+//          img[key] = value
+//        })
+//        button.insertAdjacentElement('beforeend', img)
+//        headers.insertAdjacentElement('beforeend', button)
+//     })
+
+//     return headers
+// }
+
 const POST_LIST = [
     {
-        category: [
-            { text: 'Важливо', id: 1},
-            { text: 'Нова', id: 2},
-        ],
-        info: 'До біса планувальник, наймаємо дизайнера і готуємося до презентації, як Джобс',
-        date: '25.01',
-        viewed: false,
-    },
-
-    {
-        category: [{ text: 'Нова', id: 2},],
-        info: 'Ми хотіли щоб у цьому чаті було близько 150 людей щоб зробити якісний пак самопрезентацій.',
-        date: '15.01',
+        category: [{ text: 'Що таке база знань?', id: 2},],
+        info: 'База знаний — база данных, содержащая правила вывода и информацию о человеческом опыте и знаниях в некоторой предметной области. В самообучающихся системах база знаний также содержит информацию, являющуюся результатом решения предыдущих задач.',
         viewed: true,
     }
 ]
@@ -103,8 +115,11 @@ export const createPost = () => {
             postData.info,
         )
         post.append(postHeader, infoParagraph)
-
         postlist.append(post)
+
+        // const img = createElement('img', 'main_img');
+        //    img.src = MAIN_INFO.img;
+        // main.appendChild(img);
     })
     return postlist
 }

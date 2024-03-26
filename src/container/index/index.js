@@ -1,14 +1,20 @@
-import { createElement, createHeader } from '../../script/layout'
+import { createElement,
+         createHeader, 
+         createPost,
+         POST_LIST } 
+from '../../script/layout'
    
 const page = document.querySelector('.page')
-
-const title = createElement('h1', 'title', 'Мій блог')
-
-page.append(title)
 
 const header = createHeader()
 
 page.append(header)
 
+const title = createElement('h1', 'title', 'Мій блог')
+
+page.append(title)
+
+const post = createPost()
+page.append(post)
 // console.log('container')
 
